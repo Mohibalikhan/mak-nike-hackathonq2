@@ -1,11 +1,9 @@
 
-
 import Link from 'next/link';
-import { AiOutlineSend } from "react-icons/ai";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { RiLinkedinLine } from "react-icons/ri";
-import Image from 'next/image';
+
 
 
 function Footer() {
