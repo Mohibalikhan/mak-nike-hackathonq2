@@ -1,8 +1,7 @@
 'use client'
 import Link from "next/link";
-import Image from "next/image";
-import { FaAngleRight, FaApple, FaCaretDown, FaCaretUp } from "react-icons/fa";
-import { GoArrowRight } from "react-icons/go";
+import { FaAngleRight, FaCaretDown, FaCaretUp } from "react-icons/fa";
+;
 import { useState } from "react";
 
 function Sale() {
