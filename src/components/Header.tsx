@@ -103,10 +103,11 @@ const Header = () => {
         {menuOpen && (
           <nav className="md:hidden flex flex-col items-center bg-gray-50 p-4 space-y-4">
             <Link href={"/"} className="hover:text-gray-900">New & Featured</Link>
-            <Link href={"/contact"} className="hover:text-gray-900">Men</Link>
+            <Link href={"./cart"} className="hover:text-gray-900">Men</Link>
             <Link href={"/about"} className="hover:text-gray-900">Women</Link>
-            <Link href={"/signup"} className="hover:text-gray-900">Kids</Link>
-            <Link href={'/login'} className="mr-5 hover:text-gray-900">Sale</Link>
+            <Link href={"/kids"} className="hover:text-gray-900">Kids</Link>
+            <Link href={'/sale'} className="mr-5 hover:text-gray-900">Sale</Link>
+            <Link href={'./productdetail'} className="mr-5 hover:text-gray-900">SNKRS</Link>
             
             <button
               className="mt-4 text-gray-600"
