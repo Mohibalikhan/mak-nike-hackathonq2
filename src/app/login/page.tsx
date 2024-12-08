@@ -6,7 +6,7 @@ const Login = () => {
     <div id="Login" className="bg-white w-full h-screen flex flex-col items-center justify-center">
       <div className="bg-white rounded-lg shadow-md p-8 w-96">
         <div className="text-center mb-8  ">
-          <img src="NIKE.PNG" alt="Nike Logo" className="w-20 h-20 " />
+          <img src="NIKE.png" alt="Nike Logo" className="w-20 h-20 " />
           <h2 className="text-2xl font-bold text-gray-800">YOUR ACCOUNT FOR EVERYTHING NIKE</h2>
         </div>
         
