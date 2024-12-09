@@ -77,7 +77,7 @@ function Footer() {
 <div>
 <div className="flex justify-between border-y border-black-400 py-2">
 <p className="text-[#cac2c2] opacity-90 text-xl lg:text-base mt-2">
-  Copyright Iqra Naz 2024 All right reserved
+  Mohib Ali Khan | 2024 All right reserved
 </p>
 <div className='flex justify-end gap-4 mt-2 text-[#cac2c2] opacity-90 border-y-slate-950'>
   <Link href={''}>Guides</Link>
