@@ -1,53 +1,61 @@
-import React from 'react';
+import React from "react";
 
-
-const Login = () => {
+const SignIn=()=>{
   return (
-    <div id="Login" className="bg-white w-full h-screen flex flex-col items-center justify-center">
-      <div className="bg-white rounded-lg shadow-md p-8 w-96">
-        <div className="text-center mb-8  ">
-          <center><img src="NIKE.png" alt="Nike Logo" className="w-20 h-20 " /></center>
-          <h2 className="text-2xl font-bold text-gray-800">YOUR ACCOUNT FOR EVERYTHING NIKE</h2>
+    <div className="flex mt-10 justify-center mb-10 bg-[#FFFFFF]">
+      <div className="w-[90%] max-w-[380px] h-auto bg-[#FFFFFF] px-6">
+        <div className="text-center mb-6">
+          <img
+            src="NIKE.png" 
+            alt="Nike Logo"
+            className="mx-auto w-15 h-8"
+          />
         </div>
-        
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
-              Email address
-            </label>
+        <h1 className="mt-4 text-[18px] font-bold text-center text-[#111111]">
+          YOUR ACCOUNT <br/>FOR EVERYTHING <br/>NIKE
+        </h1>
+        <form className="mt-6">
+          <div className="mb-6">
             <input
               type="email"
-              id="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Email address"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-800"
+              required
             />
           </div>
-          <div>
-            <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
-              Password
-            </label>
+          <div className="mb-6 ">
             <input
               type="password"
-              id="password"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Password"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-800"
+              required
             />
           </div>
-          <div className="flex items-center justify-between">
-            <input type="checkbox" id="remember" className="form-checkbox text-gray-700" />
-            <label htmlFor="remember" className="ml-2 text-sm text-gray-700">
-              Keep me signed in
+          <div className="flex items-center justify-between mb-4">
+            <label className="flex items-center">
+              <input type="checkbox" className="mr-2 rounded" />
+              <span className="text-black text-sm">Keep me signed in</span>
             </label>
-            <a href="#" className="text-sm text-blue-500 hover:text-blue-700">
+            <a href="#" className="text-sm text-blue-600 hover:underline">
               Forgotten your password?
             </a>
           </div>
+          
           <button
-            type="submit"></button>
-            <a href="#" className="bg-black block text-center text-xl text-white hover:text-blue-300">
-              Sign Up
-            </a>
+            type="submit"
+            className="w-full bg-black text-white py-2 rounded-md hover:bg-gray-800"
+          >
+            Sign In
+          </button>
         </form>
+        <p className="mt-6 text-center text-sm text-gray-600">
+          Don't have an account?{" "}
+          <a href="#" className="text-blue-500 font-medium hover:underline">
+            Join Us
+          </a>
+        </p>
       </div>
     </div>
   );
 }
-export default Login;
+export default SignIn;

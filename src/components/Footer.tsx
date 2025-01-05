@@ -12,7 +12,7 @@ function Footer() {
       {/* Footer Content */}
       <div className="flex flex-col lg:flex-row justify-between px-6 lg:px-20 py-8 lg:py-16 gap-12">
         {/* find a store Section */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-4">
           <h3 className="text-xl lg:text-2xl font-bold">FIND A STORE</h3>
           
           <Link className="text-base lg:text-sm" href={''}>BECOME A MEMBER</Link>
@@ -25,23 +25,21 @@ function Footer() {
        
 
         {/* help Section */}
-        <div className="flex flex-col gap-3">
-          <h3 className="text-lg lg:text-xl font-bold">GET HELP</h3>
-          <Link href={''}>Order Status</Link>
-          <Link href={''}>Delivery</Link>
-          <Link href={''}>Returns</Link>
-          <Link href={''}>Payment Options</Link>
-          <Link href={''}>Contact Us On Nike.com Inquires</Link>
-          <Link href={''}>Contact Us On All Other Inquires</Link>
+        <div className="flex flex-col gap-4">
+          <h3  className="text-xl lg:text-2xl font-bold">GET HELP</h3>
+          <Link className="text-base lg:text-sm" href={''}>Order Status</Link>
+          <Link className="text-base lg:text-sm" href={''}>Delivery</Link>
+          <Link className="text-base lg:text-sm" href={''}>Payment Options</Link>
+          <Link className="text-base lg:text-sm" href={''}>Contact Us On Nike.com Inquires</Link>
         </div>
 
         {/* About Section */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-4 ">
           <h3 className="text-lg lg:text-xl font-bold">ABOUT ME</h3>
-          <Link href={''}>News</Link>
-          <Link href={''}>Careers</Link>
-          <Link href={''}>Investers</Link>
-          <Link href={''}>Sustainability</Link>
+          <Link className="text-base lg:text-sm" href={''}>News</Link>
+          <Link className="text-base lg:text-sm" href={''}>Careers</Link>
+          <Link className="text-base lg:text-sm" href={''}>Investers</Link>
+          <Link className="text-base lg:text-sm" href={''}>Sustainability</Link>
         </div>
 
         
@@ -75,11 +73,11 @@ function Footer() {
         </div>
       
 <div>
-<div className="flex justify-between border-y border-black-400 py-2">
-<p className="text-[#cac2c2] opacity-90 text-xl lg:text-base mt-2">
-  Mohib Ali Khan | 2024 All right reserved
+<div className="flex flex-col lg:flex-row justify-between border-t border-gray-400 py-4 px-6 lg:px-20">
+<p className="text-[#cac2c2] opacity-90 text-base mt-2">
+  Mohib Ali Khan | 2024 | All rights reserved
 </p>
-<div className='flex justify-end gap-4 mt-2 text-[#cac2c2] opacity-90 border-y-slate-950'>
+<div className='flex flex-col lg:flex-row justify-end gap-4 mt-2 text-[#cac2c2] opacity-90'>
   <Link href={''}>Guides</Link>
   <Link href={''}>Terms of Sale</Link>
   <Link href={''}>Terms of Use</Link>

@@ -12,33 +12,31 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-
     
     <div>
-    <div>
-    <header className="text-gray-600 body-font bg-white shadow-md">
-        <div className="container mx-auto flex-p4 justify-between items-center px-4 sm:px-6 md:px-8">
+    <header className="text-gray-600 body-font bg-gray-100 shadow-md">
+        <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8">
           
           <h1 className="sm:text-2xl text-xl mt-2 font-bold text-gray-900 mb-4 md:mb-0">
-          <img src="Vector.png" alt="Logo" className="h-1440 w-20.54" />
+          <img src="Vector.png" alt="Logo" className="h-6 w-auto" />
           </h1>
           
-          <div className='flex items-center justify-end gap-4  text-[#0c0303] border-y-slate-950 font-bold'>
-            <nav>
-            <Link href={''}>Find a Store |</Link>
+          <div className='flex items-center justify-end gap-4  text-[#0c0303] font-semibold'>
+            <nav className="text-sm md:text-base">
+            <Link href={'./store'}>Find a Store | </Link>
             <Link href={'./help'}>Help | </Link>
-            <Link href={'./join'}>Join Us  |</Link>
+            <Link href={'./join'}>Join Us | </Link>
             <Link href={'/login'}>Sign In</Link>
             </nav>
           </div>
         </div>
         </header>
       
-    </div>
-      <header className="text-gray-600 body-font bg-white shadow-md">
+    
+      <header className="text-gray-600 text-sm body-font bg-white shadow-md">
         <div className="container mx-auto flex p-3 justify-between items-center px-4 sm:px-6 md:px-8">
         <h1 className="sm:text-2xl text-xl mt-2 font-bold text-gray-900 mb-4 md:mb-0">
-  <img src="NIKE.png" alt="Logo" className="h-58.85 w-20.54" />
+        <img src="NIKE.png" alt="Logo" className="h-7 w-auto" />
 </h1>
 
           {/* Navigation Links for Desktop */}
@@ -48,7 +46,7 @@ const Header = () => {
             <Link href={'/about'} className="mr-5 hover:text-gray-900">Women</Link>
             <Link href={'/kids'} className="mr-5 hover:text-gray-900">Kids</Link>
             <Link href={'/sale'} className="mr-5 hover:text-gray-900">Sale</Link>
-            <Link href={'./productdetail'} className="mr-5 hover:text-gray-900">SNKRS</Link>
+            <Link href={'./snkrs'} className="mr-5 hover:text-gray-900">SNKRS</Link>
           </nav>
 
           {/* Search Bar, Wishlist Icon, Cart Icon, Hamburger Menu for Mobile */}
@@ -103,11 +101,11 @@ const Header = () => {
         {menuOpen && (
           <nav className="md:hidden flex flex-col items-center bg-gray-50 p-4 space-y-4">
             <Link href={"/"} className="hover:text-gray-900">New & Featured</Link>
-            <Link href={"./cart"} className="hover:text-gray-900">Men</Link>
+            <Link href={"./sale"} className="hover:text-gray-900">Men</Link>
             <Link href={"/about"} className="hover:text-gray-900">Women</Link>
             <Link href={"/kids"} className="hover:text-gray-900">Kids</Link>
-            <Link href={'/sale'} className="mr-5 hover:text-gray-900">Sale</Link>
-            <Link href={'./productdetail'} className="mr-5 hover:text-gray-900">SNKRS</Link>
+            <Link href={'/sale'} className=" hover:text-gray-900">Sale</Link>
+            <Link href={'./snkrs'} className=" hover:text-gray-900">SNKRS</Link>
             
             <button
               className="mt-4 text-gray-600"

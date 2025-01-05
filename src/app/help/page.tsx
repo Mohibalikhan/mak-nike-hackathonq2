@@ -4,7 +4,7 @@ const help = () => {
   return (
     
     <div className="container mx-auto px-4 py-8">
-    <h1 className="container mx-auto  text-3xl text-center font-bold mt-0">GET HELP</h1>
+    <h1 className="text-3xl text-center font-bold mt-0">GET HELP</h1>
       <h2 className="text-3xl font-bold text-gray-800 mb-4 py-7">
         What Payment Options Can I Use On Nike Orders?
       </h2>
@@ -12,7 +12,7 @@ const help = () => {
         We want to make buying your favourite Nike shoes and gear online fast and
         easy, and we accept the following payment options:
       </p>
-      <ul className="flex gap-7 flex-row list-disc pl-6 text-gray-600 mb-4">
+      <ul className="flex flex-col md:flex-row gap-4 md:gap-7 list-disc pl-6 text-gray-600 mb-4">
         <li>Visa</li>
         <li>Mastercard</li>
         <li>Diners Club</li>
@@ -29,8 +29,8 @@ const help = () => {
         Nike Members can store multiple debit or credit cards in their profile for
         faster checkout. If you're not already a Member, join us today.
       </p>
-      <div className="flex justify-start">
-        <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-8">
+      <div className="flex flex-col md:flex-row justify-start mb-8">
+        <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-4 md:mb-0 md:mr-4">
           Join Us
         </button>
         <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
