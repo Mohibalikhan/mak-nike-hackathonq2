@@ -104,7 +104,7 @@ export default function Hero() {
   <div className="container p-10">
   <p className="text-xl font-semibold px-10 lg:px-6 uppercase text-start mb-8">Gear Up</p>
   <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 lg:gap-8">
-    <div className="font-sm  text-slate-600 text-center">
+    <div className="font-bold  text-slate-600 text-center">
       <Image src={"/g1.png"} alt={"shirt"} width={300} height={200} />
       <p className="mt-2">Nike Dri-FIT ADV TechKnit Ultra</p>
       <p className="text-sm">Men's Short Sleeve</p>
@@ -124,7 +124,8 @@ export default function Hero() {
     </div>
     <div className="font-bold text-slate-600 text-center">
       <Image src={"/g4.png"} alt={"leggings"} width={300} height={200} />
-      <p className="mt-2">Women's Running Leggings with Pockets</p>
+      <p className="mt-2">Nike Legging Spirint Challenger</p>
+      <p className="text-sm">Women's Running Leggings</p>
       <p className="text-lg">₹ 3795</p>
     </div>
   </div>
@@ -159,39 +160,48 @@ export default function Hero() {
 
             
             </div>
-            <div className="contanier">
-            <div className='mt-28 mb-0'>
-        <span className='text-xl font-semibold px-10 lg:px-16'>The Essentials</span>
-        </div>
-        <div className='flex justify-center items-center mb-16 md:mb-28 flex-wrap'>
+ <div className="container p-10">
+    <div className='mt-28 mb-7'>
+        <span className='text-xl font-semibold px-10 lg:px-6 text-start '>The Essentials</span>
+    </div>
+    <div className='flex justify-center items-center mb-5 md:mb-5 flex-wrap'>
         
-        <div className='w-96 h-[400px] px-2 overflow-hidden'>
+        {/* First Image */}
+        <div className='w-full sm:w-96 lg:w-96 h-[400px] px-2 overflow-hidden mb-8 sm:mb-0'>
             <Image
-            className='hover:scale-105 duration-300'
-               src={'/l1.png'}
-               alt=''
-               width={300}
-               height={200}/>
-            </div>
-      <div className='w-96 h-[400px] px-2 overflow-hidden my-7 md:my0 '>
-            <Image
-            className='hover:scale-105 duration-300'
-               src={'/l2.png'}
-               alt=''
-               width={300}
-               height={500}/>
-            </div>
+                className='hover:scale-105 duration-300'
+                src={'/l1.png'}
+                alt=''
+                width={300}
+                height={200}
+            />
+        </div>
 
-<div className='w-96 h-[400px]  px-2 overflow-hidden mb-14 md:mb-0'>
+        {/* Second Image */}
+        <div className='w-full sm:w-96 lg:w-96 h-[400px] px-2 overflow-hidden my-7 sm:my-0'>
             <Image
-            className='hover:scale-105 duration-300'
-               src={'/l3.png'}
-               alt=''
-               width={300}
-               height={500}/>
-            </div>
+                className='hover:scale-105 duration-300'
+                src={'/l2.png'}
+                alt=''
+                width={300}
+                height={500}
+            />
         </div>
+
+        {/* Third Image */}
+        <div className='w-full sm:w-96 lg:w-96 h-[400px] px-2 overflow-hidden mb-14 sm:mb-0'>
+            <Image
+                className='hover:scale-105 duration-300'
+                src={'/l3.png'}
+                alt=''
+                width={300}
+                height={500}
+            />
         </div>
+    </div>
+</div>
+
+        
         
 
 <div className="bg-white text-black">
